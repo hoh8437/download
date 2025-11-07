@@ -1,89 +1,106 @@
- <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: Tahoma, sans-serif;
-      background-color: #111;
-      color: #fff;
-    }
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma, sans-serif;
+    background-color: #111;
+    color: #fff;
+  }
 
-    .footer {
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-      background-color: #222;
-      text-align: center;
-      padding: 150px 0;
-      border-top: 2px solid #00ffff;
-    }
+  .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #222;
+    text-align: center;
+    padding: 100px 0;
+    border-top: 2px solid #00ffff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    overflow-y: auto;
+  }
 
-    .footer a {
-      color: #00ffff;
-      text-decoration: underline;
-      margin: 0 20px;
-      font-size: 20px;
-      font-weight: bold;
-    }
+  .footer a {
+    color: #00ffff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: transform 0.2s ease, color 0.2s ease;
+  }
 
-    .footer a:hover {
-      text-decoration: underline;
-    }
- </style>
+  .footer a:hover {
+    text-decoration: underline;
+    transform: scale(1.1);
+  }
 
-  <div class="footer">
-    <a href="https://www.virtualbox.org/wiki/Downloads" target="_blank">VirtualBox</a>
-    <a href="https://www.sourceforge.net/projects/owasp" target="_blank">OWASP BWA Project</a>
-    <a href="https://www.kali.org/" target="_blank">Kali Linux</a>
-    <a href="https://www.parrotsec.org/" target="_blank">Parrot Security OS</a>
-    <a href="https://www.metasploit.com/" target="_blank">Metasploit</a>
-    <a href="https://www.wireshark.org/" target="_blank">Wireshark</a>
-    <a href="https://nmap.org/" target="_blank">Nmap</a>
-    <a href="https://www.burp.com/" target="_blank">Burp Suite</a>
-    <a href="https://www.zaproxy.org/" target="_blank">OWASP ZAP</a>
-    <a href="https://www.techpowerup.com/download/vmware-workstation-pro/" target="_blank">VMware Workstation</a>
-    <a href="https://www.sonatype.com/products/repository-oss" target="_blank">Nexus Repository OSS</a>
-    <a href="https://www.jfrog.com/confluence/display/JFROG/Artifactory" target="_blank">JFrog Artifactory</a>
-    <a href="https://discord.com/download" target="_blank">Discord</a>
-    <a href="https://csilinux.com/downloads.html" target="_blank">CSI Linux</a>
-    <a href="https://remnux.org/" target="_blank">REMnux</a>
-    <a href="https://www.splunk.com/en_us/download/splunk-enterprise.html" target="_blank">Splunk</a>
-    <a href="https://www.elastic.co/downloads/kibana" target="_blank">Kibana</a>
-    <a href="https://www.win-rar.com/start.html?&L=0" target="_blank">WinRAR</a>
-    <a href="https://www.microsoft.com/software-download/windows10" target="_blank">Windows 10 ISO</a>
-    <a href="https://www.microsoft.com/software-download/windows11" target="_blank">Windows 11 ISO</a>
-    <a href="https://www.ubuntu.com/download/desktop" target="_blank">Ubuntu</a>
-    <a href="https://www.linuxmint.com/download.php" target="_blank">Linux Mint</a>
-    <a href="https://getfedora.org/en/workstation/download/" target="_blank">Fedora</a>
-    <a href="https://www.centos.org/download/" target="_blank">CentOS</a>
-    <a href="https://www.debian.org/distrib/" target="_blank">Debian</a>
-    <a href="https://sourceforge.net/projects/cedarlogic/" target="_blank">Cedar Logic</a>
-    <a href="https://www.autopsy.com/download/" target="_blank">Autopsy</a>
-    <a href="https://www.sleuthkit.org/sleuthkit/download.php" target="_blank">The Sleuth Kit</a>
-    <a href="https://www.ftk.com/ftk-imager/" target="_blank">FTK Imager</a>
-    <a href="https://www.nirsoft.net/utils/" target="_blank">NirSoft Utilities</a>
-    <a href="https://www.drawio.com/" target="_blank">draw.io</a>
-    <a href="https://www.avast.com/ar-sa/index#pc" target="_blank">Avast Free Antivirus</a>
-    <a href="https://www.malwarebytes.com/mwb-download/" target="_blank">Malwarebytes</a>
-    <a href="https://x64dbg.com/" target="_blank">x64dbg</a>
-    <a href="https://ghidra-sre.org/" target="_blank">Ghidra</a>
-    <a href="https://www.hex-rays.com/products/ida/support/download_freeware/" target="_blank">IDA Free</a>
-    <a href="https://tria.ge/" target="_blank">Tria.ge</a>
-    <a href="https://visualstudio.microsoft.com/" target="_blank">Visual Studio</a>
-    <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a>
-    <a href="https://www.oracle.com/sa/java/technologies/downloads/" target="_blank">Java Development Kit (JDK)</a>
-    <a href="https://www.python.org/downloads/" target="_blank">Python</a>
-    <a href="https://nodejs.org/en/download/" target="_blank">Node.js</a>
-    <a href="https://www.postman.com/downloads/" target="_blank">Postman</a>
-    <a href="https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2016" target="_blank">Windows Server 2016</a>
-    <a href="https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2019" target="_blank">Windows Server 2019</a>
-    <a href="https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2022" target="_blank">Windows Server 2022</a>
-    <a href="https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2025" target="_blank">Windows Server 2025</a>
-    <a href="https://wifi4soft.com/ar/windows-7-pro" target="_blank">Windows 7 ISO</a>
-    <a href="https://wifi4soft.com/ar/windows-8-1-pro" target="_blank">Windows 8.1 Pro ISO</a>
-    <a href="https://wifi4soft.com/ar/v-mware-workstation-pro" target="_blank">VMware Workstation Pro 2</a>
-    <a href="https://www.memuplay.com/" target="_blank">MEmu Android Emulator</a>
-    <a href="https://go.microsoft.com/fwlink/?linkid=2264705&clcid=0x409&culture=en-us&country=us" target="_blank">Office 365</a>
-    <a href="https://rufus.ie/ar/" target="_blank">Rufus</a>
-    <a href="https://www.nvidia.com/en-us/software/nvidia-app/" target="_blank">NVIDIA GeForce Experience</a>
-    <a href="https://obsproject.com/download" target="_blank">OBS Studio</a>
-  </div>
+  .footer img {
+    width: 24px;
+    height: 24px;
+    border-radius: 5px;
+  }
+</style>
+
+<div class="footer">
+
+  <a href="https://www.virtualbox.org/wiki/Downloads" target="_blank"><img src="https://www.virtualbox.org/graphics/vbox_logo2_gradient.png">VirtualBox</a>
+  <a href="https://www.sourceforge.net/projects/owasp" target="_blank"><img src="https://owasp.org/assets/images/logo.png">OWASP BWA</a>
+  <a href="https://www.kali.org/" target="_blank"><img src="https://www.kali.org/images/kali-logo.svg">Kali Linux</a>
+  <a href="https://www.parrotsec.org/" target="_blank"><img src="https://gdm-catalog-fmapi-prod.imgix.net/ProductLogo/b91dba39-aef6-4808-be11-8eda81f81f56.png?w=128&h=128&fit=max&dpr=3&auto=format&q=50">Parrot OS</a>
+  <a href="https://www.metasploit.com/" target="_blank"><img src="https://diesec.com/wp-content/uploads/2022/07/metasploit-diesec.jpg">Metasploit</a>
+  <a href="https://www.wireshark.org/" target="_blank"><img src="https://images.sftcdn.net/images/t_app-icon-m/p/8ad5933e-96d6-11e6-91ef-00163ec9f5fa/386544326/wireshark-download.png">Wireshark</a>
+  <a href="https://nmap.org/" target="_blank"><img src="https://assets.tryhackme.com/img/modules/nmap.png">Nmap</a>
+  <a href="https://portswigger.net/" target="_blank"><img src="https://jacobriggs.io/tools/app/web/upload/large/3_eedab2dbcde47a63f847af0a612d1f8d.png">Burp Suite</a>
+  <a href="https://www.zaproxy.org/" target="_blank"><img src="https://www.zaproxy.org/docs/api/images/logo.png">OWASP ZAP</a>
+  <a href="https://www.techpowerup.com/download/vmware-workstation-pro/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Vmware_workstation_16_icon.svg/250px-Vmware_workstation_16_icon.svg.png">VMware Workstation</a>
+  <a href="https://www.sonatype.com/products/repository-oss" target="_blank"><img src="https://yt3.googleusercontent.com/ytc/AIdro_mDXKOkcWaiT0i8UL968jTin1RkKGLtNBrE36DlUgwUoHo=s900-c-k-c0x00ffffff-no-rj">Nexus Repository OSS</a>
+  <a href="https://www.jfrog.com/confluence/display/JFROG/Artifactory" target="_blank"><img src="https://store-images.s-microsoft.com/image/apps.3514.bbb1f9f4-3059-4d4e-b1b0-d8d71eb78110.560d9849-ba87-4cdc-85fd-d5d2c182b58d.ef1a1c8b-a55c-455b-860c-54aa765c94d1.png">JFrog Artifactory</a>
+  <a href="https://discord.com/download" target="_blank"><img src="https://cdn.worldvectorlogo.com/logos/discord-6.svg">Discord</a>
+  <a href="https://csilinux.com/downloads.html" target="_blank"><img src="https://echothislabs.com/pluginfile.php/1/local_edwiserpagebuilder/media/817073234/CSI.png">CSI Linux</a>
+  <a href="https://remnux.org/" target="_blank"><img src="https://remnux.org/img/remnux-logo.png">REMnux</a>
+  <a href="https://www.splunk.com/en_us/download/splunk-enterprise.html" target="_blank"><img src="https://www.splunk.com/favicon.ico">Splunk</a>
+  <a href="https://www.elastic.co/downloads/kibana" target="_blank"><img src="https://www.elastic.co/favicon.ico">Kibana</a>
+  <a href="https://www.win-rar.com/start.html?&L=0" target="_blank"><img src="https://cdn.neowin.com/news/images/uploaded/2025/06/1749554799_winrar.webp">WinRAR</a>
+  <a href="https://www.microsoft.com/software-download/windows10" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLoww1XXL77wmMdiMndPqrPIXQ8nTTeduxjQ&s">Windows 10</a>
+  <a href="https://www.microsoft.com/software-download/windows11" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaAammCJXBtlXV2cvxIqdBZN-YVtHimw-9fA&s">Windows 11</a>
+  <a href="https://www.ubuntu.com/download/desktop" target="_blank"><img src="https://assets.ubuntu.com/v1/29985a98-ubuntu-logo32.png">Ubuntu</a>
+  <a href="https://www.linuxmint.com/download.php" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Linux_Mint_logo_without_wordmark.svg/330px-Linux_Mint_logo_without_wordmark.svg.png">Linux Mint</a>
+  <a href="https://fedoraproject.org/" target="_blank"><img src="https://cdn.shortpixel.ai/spai/q_lossy+ret_img+to_auto/linuxiac.com/wp-content/uploads/2020/08/fedora.png">Fedora</a>
+  <a href="https://www.centos.org/download/" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUTewvWdphS-pQmhFV-106Y_0xNCaS_r2HVw&s">CentOS</a>
+  <a href="https://www.debian.org/distrib/" target="_blank"><img src="https://www.debian.org/logos/openlogo-nd.svg">Debian</a>
+  <a href="https://sourceforge.net/projects/cedarlogic/" target="_blank"><img src="https://sourceforge.net/favicon.ico">Cedar Logic</a>
+  <a href="https://www.autopsy.com/download/" target="_blank"><img src="https://miro.medium.com/v2/1*1xgHIc1acL1MzvhzR0PSkA.png">Autopsy</a>
+  <a href="https://www.sleuthkit.org/sleuthkit/download.php" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGj6L17JS3o1ZTqovA6Pkay2UTv5jzEW9dsDwGOmkfYw0z1xFcO3w9cabRmpLLyA1G0qwcF4FdZNarXXaPySDpzS2JFYci7yfQ5Q2LIg&s=10">The Sleuth Kit</a>
+  <a href="https://www.ftk.com/ftk-imager/" target="_blank"><img src="https://www.forensiccomputers.com/pub/media/catalog/product/cache/074aaa3f33a4989c9d620e82cc63a0fe/f/t/ftk_imager.png">FTK Imager</a>
+  <a href="https://www.nirsoft.net/utils/" target="_blank"><img src="https://www.solvusoft.com/file-extensions/images/developers/200x200/4975_nirsoft.png">NirSoft Utilities</a>
+  <a href="https://www.drawio.com/" target="_blank"><img src="https://www.drawio.com/assets/favicon.ico">draw.io</a>
+  <a href="https://www.avast.com/ar-sa/index#pc" target="_blank"><img src="https://www.avast.com/favicon.ico">Avast</a>
+  <a href="https://www.malwarebytes.com/mwb-download/" target="_blank"><img src="https://www.malwarebytes.com/favicon.ico">Malwarebytes</a>
+  <a href="https://x64dbg.com/" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP7VMiOvsyHm5XcNfTet073TvmG9gl0UZxXt93yaSnUngPbU22dFF3e37ZKvcrRy8F0Qk&usqp=CAU">x64dbg</a>
+  <a href="https://ghidra-sre.org/" target="_blank"><img src="https://raw.githubusercontent.com/NationalSecurityAgency/ghidra/refs/heads/master/Ghidra/Features/Base/src/main/resources/images/GHIDRA_3.png">Ghidra</a>
+  <a href="https://www.hex-rays.com/products/ida/support/download_freeware/" target="_blank"><img src="https://www.hex-rays.com/favicon.ico">IDA Free</a>
+  <a href="https://tria.ge/" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDfvijZZPevC9zsPckFNflGE-zaJq0r1MgYc_8SIOD8m1N2D5Ctz9vY8vlxvJdc4lv05A&usqp=CAU">Tria.ge</a>
+  <a href="https://visualstudio.microsoft.com/" target="_blank"><img src="https://visualstudio.microsoft.com/favicon.ico">Visual Studio</a>
+  <a href="https://code.visualstudio.com/" target="_blank"><img src="https://images-eds-ssl.xboxlive.com/image?url=4rt9.lXDC4H_93laV1_eHHFT949fUipzkiFOBH3fAiZZUCdYojwUyX2aTonS1aIwMrx6NUIsHfUHSLzjGJFxxj7kCzMIlSC20SNjaJf9GmG15ocnF.zbBRgxMSlB7Ejh6FbgNzxLvZOoW7N3ML56fn3m5Z4MO.M8pYrCFVKIhqM-&format=source">VS Code</a>
+  <a href="https://www.oracle.com/" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd25_0XrzGntBmNC2l8tU7dKacxp7b1njXQg&s">JDK</a>
+  <a href="https://www.python.org/downloads/" target="_blank"><img src="https://www.python.org/static/favicon.ico">Python</a>
+  <a href="https://nodejs.org/en/download/" target="_blank"><img src="https://nodejs.org/static/images/favicons/favicon.ico">Node.js</a>
+  <a href="https://www.postman.com/downloads/" target="_blank"><img src="https://images.g2crowd.com/uploads/product/image/fd527e1fc777d9e31b2a28e8d3c959a4/postman.jpg">Postman</a>
+  <a href="https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2016" target="_blank"><img src="https://futureskills.mcit.gov.sa/sites/default/files/styles/medium/public/2020-12/download.png?itok=yUM0kxNh">Server 2016</a>
+  <a href="https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2019" target="_blank"><img src="https://futureskills.mcit.gov.sa/sites/default/files/styles/medium/public/2020-12/download.png?itok=yUM0kxNh">Server 2019</a>
+  <a href="https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2022" target="_blank"><img src="https://futureskills.mcit.gov.sa/sites/default/files/styles/medium/public/2020-12/download.png?itok=yUM0kxNh">Server 2022</a>
+  <a href="https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2025" target="_blank"><img src="https://futureskills.mcit.gov.sa/sites/default/files/styles/medium/public/2020-12/download.png?itok=yUM0kxNh">Server 2025</a>
+  <a href="https://wifi4soft.com/ar/windows-7-pro" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2F_lPr-fQLs_rd1CTueowNL1Hopvipp2vYbUPn88E_Bm4wJYf53s-ss6XFh3kIvMPrJw&usqp=CAU">Windows 7</a>
+  <a href="https://wifi4soft.com/ar/windows-8-1-pro" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5QVqcFHhURp1r9kWxhLhx1KvqqzD0dvt1b6U9evFERfsZhXwPhzwGWTow-8OK79fmpp8&usqp=CAU">Windows 8.1</a>
+  <a href="https://wifi4soft.com/ar/v-mware-workstation-pro" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Vmware_workstation_16_icon.svg/250px-Vmware_workstation_16_icon.svg.png">VMware Pro 2</a>
+  <a href="https://www.memuplay.com/" target="_blank"><img src="https://www.memuplay.com/favicon.ico">MEmu</a>
+  <a href="https://go.microsoft.com/fwlink/?linkid=2264705&clcid=0x409&culture=en-us&country=us" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlFIKfxfkRXuthy-7Rso9KlBC5lEVv08kNsGWZH-ru4T0dtgzf3w_7fOCpIZavZR_gpK0&usqp=CAU">Office 365</a>
+  <a href="https://rufus.ie/ar/" target="_blank"><img src="https://rufus.ie/favicon.ico">Rufus</a>
+  <a href="https://www.nvidia.com/en-us/software/nvidia-app/" target="_blank"><img src="https://www.nvidia.com/favicon.ico">NVIDIA</a>
+  <a href="https://obsproject.com/download" target="_blank"><img src="https://obsproject.com/favicon-32x32.png">OBS Studio</a>
+
+</div>
